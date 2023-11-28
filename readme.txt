@@ -44,3 +44,9 @@ File tables are structured in the same way as in the slides
 
     Indexed File Table Structure:
     <file name>     <index block>
+
+Please ignore the following files within the project, I used them to test my program
+    abc.txt
+    abc2.txt
+    abc3.txt
+    text.txt
