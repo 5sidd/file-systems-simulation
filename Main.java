@@ -106,9 +106,16 @@ public class Main {
         File f = new File(systemFilePath);
         
         if (f.exists() && !f.isDirectory()) {
-            System.out.println("Copy as:");
-            String simulationFile = scanner.nextLine();
-            fm.addFileToSimulation(disk, simulationFile, f);
+            int blocksNeeded = fm.getBlocksNeeded(f);
+            
+            if (blocksNeeded > 10) {
+                System.out.println("Error: Could not add file to simulation since it is longer than 10 blocks");
+            }
+            else {
+                System.out.println("Copy as:");
+                String simulationFile = scanner.nextLine();
+                fm.addFileToSimulation(disk, simulationFile, f);
+            }
         }
         else {
             System.out.println("Error: could not find specified file within the real system");
