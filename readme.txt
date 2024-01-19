@@ -1,3 +1,12 @@
+This project is a demonstration of how the three major types of file allocation systems work within operating systems.
+
+The three file allocation systems are
+    1) Contiguous Allocation
+    2) Chained Allocation
+    3) Indexed Allocation
+
+Here is a resource to understand how these file allocation systems work: https://www.geeksforgeeks.org/file-allocation-methods/
+
 How to run:
 
 You run this project through the Main class using the following commands:
@@ -45,7 +54,7 @@ File tables are structured in the same way as in the slides
     Indexed File Table Structure:
     <file name>     <index block>
 
-Please ignore the following files within the project, I used them to test my program
+Please ignore the following files within the project, I used them to test my program. However, you can use these files to test the program as well.
     abc.txt
     abc2.txt
     abc3.txt
