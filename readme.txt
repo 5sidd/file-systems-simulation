@@ -47,9 +47,9 @@ Please DO NOT use duplicate file names for files being stored in the simulation
 
 I recommend file content to only include ASCII characters
 
-File tables are structured in the same way as in the slides
+File tables are structured in the same way as follows:
     Contiguous & Chained File Table Structure:
-    <file name>     <start block>     <length>
+    <file name>     <start block>     <length in blocks>
 
     Indexed File Table Structure:
     <file name>     <index block>
